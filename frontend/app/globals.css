@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #eef1f4;
+  --color-panel: #ffffff;
+  --color-ink: #1c2a3a;
+  --color-muted: #5b6b7c;
+  --color-line: #d3dae2;
+  --color-gemini: #0f8a75;
+  --color-answer: #c2557a;
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-plex-sans), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: reveal 0.35s ease-out both;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
